@@ -82,3 +82,21 @@
   background: #07051a;
   color: white;
 }
+
+.header .inner-content .bell, .user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #f1fff92f;
+  transition: all 0.2s;
+}
+
+.header .inner-content .bell:hover, .user:hover {
+  width: 55px;
+  height: 55px;
+  transition: all 0.2s;
+  
+}
