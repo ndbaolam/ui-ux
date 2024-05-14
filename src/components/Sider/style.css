@@ -1,49 +1,47 @@
-.container {
+.sider {
   position: fixed;
   overflow: auto;
-  z-index: 50;
-  max-width: 283px;
-  width: 100%;
+  width: 17.8%;
   height: 1024px;
   background: #fff;
 }
 
-.container .inner-logo {
+.sider .inner-logo {
   margin: 30px;
   display: flex;
   align-items: center;
   justify-content: left;
 }
 
-.container .inner-logo a {
+.sider .inner-logo a {
   text-decoration: none;
   margin-right: 10px;
 }
 
-.container .inner-content {
+.sider .inner-content {
   max-width: 283px;
   width: 100%;
 }
 
-.container .inner-content div {
+.sider .inner-content div {
   display: flex;
   align-items: center;
   padding-left: 35px;
   transition: all 0.2s ease-out;
 }
 
-.container .inner-content div p {
+.sider .inner-content div p {
   margin-left: 10px;
   font-weight: 600;
 }
 
-.container .inner-content div:hover {
+.sider .inner-content div:hover {
   background: #91D9B5;
   border-radius: 5px;
   transition: all 0.2s ease-out;
 }
 
-.container .inner-content .sign-out{
+.sider .inner-content .sign-out{
   position: relative;
   top: 260px;
   max-width: 250px;

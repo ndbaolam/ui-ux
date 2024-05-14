@@ -1,12 +1,15 @@
-import Header from './components/Header';
-import Sider from './components/Sider';
+import Dashboard from './pages/dashboard';
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <>
-      <Sider/>
-      {<Header title={"Header"}/>}
+     <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Dashboard/>} />
+        </Routes>
+     </BrowserRouter>
     </>
   );
 }

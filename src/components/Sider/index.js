@@ -13,7 +13,7 @@ import {
 export const Sider = () => {
   return (
     <>
-      <div className='container'>
+      <div className='sider'>
         <div className='inner-logo'>
           <a href='#'><Logo/></a>
           <a href='#'><DAPAT/></a>
