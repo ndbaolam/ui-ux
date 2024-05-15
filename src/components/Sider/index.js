@@ -19,7 +19,7 @@ export const Sider = () => {
           <a href='#'><DAPAT/></a>
         </div>        
         <div className='inner-content'>
-            <div>
+            <div className='inner-item'>
               <IconDashboard />
               <p>Dashboard</p>
             </div>

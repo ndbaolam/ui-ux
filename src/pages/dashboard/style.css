@@ -1,19 +1,12 @@
-
-
  .container {
-   max-width: 1130px;
-   width: 100%;
-   padding: 10px;
-   margin-left: auto;
-   margin-right: auto;
- }
-
- .container-header{
-   width: 100%;
-   padding: 10px;
+  width: calc(100%-17.8%);
+  overflow: hidden;
+  padding: 20px;
+  margin-left: 17.8%;
  }
 
  .container-header .inner-list {
+  max-width: calc(100% - 20px);
    display: flex;
    align-items: center;
    justify-content: space-between;
@@ -76,19 +69,20 @@
  }
  
  .container-main .inner-list .inner-row {
+  max-width: calc(100% - 20px);
    display: flex;
    align-items: center;
-   justify-content: space-between;
    margin-bottom: 30px;
+   justify-content: space-between;
  }
 
  .container-main .inner-item{
+  position: relative;     
    width: 550px;
    height: 320px;
    background: #FFFCE7;
    border-radius: 10px;
-   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
-   position: relative;      
+   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3); 
  }
 
  .container-main .inner-item .inner-title {
@@ -116,10 +110,10 @@
 
  .container-main .inner-item #graph{
    position: absolute;
-   bottom: 10px;
+   bottom: 0;
    left: 22.5px;
-   width:100%;
-   max-width:500px
+   width:50%;
+   max-width:500px;
  }
 
  .container-main .inner-item .pieChart{

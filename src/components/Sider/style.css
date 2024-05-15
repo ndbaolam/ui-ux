@@ -19,11 +19,13 @@
 }
 
 .sider .inner-content {
-  max-width: 283px;
-  width: 100%;
+  position: relative;
+  width: 80%;
 }
 
 .sider .inner-content div {
+  width: 100%;
+  padding: 20px;
   display: flex;
   align-items: center;
   padding-left: 35px;
@@ -42,8 +44,8 @@
 }
 
 .sider .inner-content .sign-out{
-  position: relative;
-  top: 260px;
+  position: absolute;
+  bottom: -280px;
   max-width: 250px;
   width: 100%;
 }
