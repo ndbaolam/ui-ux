@@ -12,56 +12,41 @@
    justify-content: space-between;
  }
 
- .container-header .inner-list .inner-item1 {
-   width: 266px;
+ .container-header .inner-list .inner-item1, .inner-item2, .inner-item3 {
+  padding: 10px;
+  width: 100%;
+  max-width: 266px;
    height: 145px;
    border-radius: 10px;
    /* https://uigradients.com/#SeaBlizz */
-   background-image: linear-gradient(180deg, #B38F33, #FFC535);
+  background:#FCE7BC;
    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
    position: relative;
  }
- .container-header .inner-list .inner-item2 {
-   width: 266px;
-   height: 145px;
-   border-radius: 10px;
-   /* https://uigradients.com/#SeaBlizz */
-   background-image: linear-gradient(180deg,#4CB7D1, #64CEE6);
-   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-   position: relative;
- }
- .container-header .inner-list .inner-item3 {
-   width: 266px;
-   height: 145px;
-   border-radius: 10px;
-   /* https://uigradients.com/#SeaBlizz */
-   background-image: linear-gradient(180deg,#59709B, #A5BDEB);
-   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-   position: relative;
- }
- .container-header .inner-list .inner-item h1 {
+
+ .container-header .inner-list .inner-item1 h1, .inner-item2 h1, .inner-item3 h1 {
    position: absolute;
    top: 10px;
    left: 20px;
    font-size: 50px;
  }
 
- .container-header .inner-list .inner-item .img-background {
+ .container-header .inner-list .inner-item1 .img-background, .inner-item2 .img-background, .inner-item3 .img-background {
    position: absolute;
    right: 0;
    border-radius: 10px;
  }
 
- .container-header .inner-list .inner-item p {
+ .container-header .inner-list .inner-item1 p, .inner-item2 p, .inner-item3 p {
    position: absolute;
    bottom: 10px;
-   left: 40px;
+   left: 50px;
  }
 
- .container-header .inner-list .inner-item .img-icon { 
+ .container-header .inner-list .inner-item1 .img-icon, .inner-item2 .img-icon, .inner-item3 .img-icon { 
    position: absolute;
    bottom: 10px;
-   left: 10px;
+   left: 20px;
  }
 
  .container-main {
@@ -108,18 +93,28 @@
    border: none;
  }
 
- .container-main .inner-item #graph{
-   position: absolute;
-   bottom: 0;
-   left: 22.5px;
-   width:50%;
-   max-width:500px;
+ .container-main .inner-item .graph{
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  width: 560px;
+  height: fit-content;
  }
 
- .container-main .inner-item .pieChart{
-   position: absolute;
-   left: 180px;
-   bottom: 20px;
+ .container-main .inner-item .pie-chart{
+  position: absolute;
+  bottom: -54px;
+  left: 110px;
+  width: 380px;
+  height: 380px;
+}
+
+ .container-main .inner-item .bar-chart{
+  position: absolute;
+  bottom: -40px;
+  left: 10px;
+  width: 95%;
+  height: 95%;
  }
 
  .container-main .inner-item table {
@@ -173,5 +168,5 @@
  }
 
  th, td {
-   border: 1px solid #ddd;
+   border: 2px solid #ddd;
  }
