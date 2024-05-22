@@ -1,0 +1,23 @@
+@media screen and (max-width: 1536px) and (min-width: 678px){
+  main {
+    padding-left: 20px;
+  }
+
+  .main {
+    width: calc(100% - 18%);
+    float: right;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 678px){
+  main {
+    padding: 20px;
+    height: fit-content;
+  }
+
+  .main {
+    margin-top: 18%;
+  }
+}

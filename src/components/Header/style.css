@@ -1,7 +1,6 @@
 .header { 
-  position: relative;
-  left: 17.8%;
   width: calc(100% - 17.8%);
+  float: right;
   height: 94px;
   background-image: linear-gradient(to right, rgb(255, 255, 255), #009254);
   display: flex;
@@ -28,7 +27,6 @@
   margin-left: 30px;
 }
 
-/*Search*/
 .header .inner-content .search-box form{
   position: relative;
   transition: all 1s;
@@ -55,6 +53,7 @@
   padding: 0 20px;
 }
 
+
 .header .inner-content .search-box form .fa{
   box-sizing: border-box;
   padding: 10px;
@@ -70,18 +69,22 @@
   transition: all 1s;
 }
 
-.header .inner-content .search-box form:hover, form:valid{
-  width: 200px;
-  cursor: pointer;
-}
 
-.header .inner-content .search-box form:hover input, form:valid input{
-  display: block;
-}
+@media screen and (min-width: 678px) {
+ /*Search*/  
+  .header .inner-content .search-box form:hover, form:valid{
+    width: 200px;
+    cursor: pointer;
+  }
 
-.header .inner-content .search-box form:hover .fa, form:valid .fa{
-  background: #07051a;
-  color: white;
+  .header .inner-content .search-box form:hover input, form:valid input{
+    display: block;
+  }
+
+  .header .inner-content .search-box form:hover .fa, form:valid .fa{
+    background: #07051a;
+    color: white;
+  } 
 }
 
 .header .inner-content .bell, .user {
@@ -99,5 +102,13 @@
   width: 55px;
   height: 55px;
   transition: all 0.2s;
-  
+}
+
+@media screen and (max-width: 678px) {
+  .header {
+    clear: both;
+    width: 100% !important;
+    justify-content: center;
+    position: sticky;
+  }
 }
